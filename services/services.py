@@ -16,6 +16,10 @@ def runApplication():
     cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
     app.config['DEBUG'] = True
 
+    @app.route("/", methods=['GET'])
+    def index():
+        return "Rota de Teste de API"
+
     # Rotas para produtos---------------------------------------
 
     @app.route('/api/v1/produto/listar', methods=['GET'])
