@@ -2,6 +2,6 @@
 url = "https://pypi.python.org/simple (https://pypi.python.org/simple)"
 verify_ssl = true
 [packages]
-Flask = "2.0.2"
+Flask = "*"
 [requires]
-python_version = "3.8"
+python_version = "3.9"
