@@ -1,4 +1,4 @@
-from flask.json import jsonify
+from flask import jsonify
 import json
 import traceback
 

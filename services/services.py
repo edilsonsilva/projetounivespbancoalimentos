@@ -1,11 +1,10 @@
+import os
 from domain.retirada import Retirada
 from domain.estoque import Estoque
 from domain.produto import Produto
 from domain.entrada import Entrada
-from flask import json
-from flask.json import jsonify
 from flask_cors import CORS
-from flask import Flask, request
+from flask import Flask, jsonify, request
 from domain.doador import Doador
 from domain.doacao import Doacao
 
