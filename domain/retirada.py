@@ -10,10 +10,10 @@ class Retirada:
         self.idproduto = idproduto
         self.quantidade = quantidade
 
-        self.conn = pymysql.connect(host='localhost',
-                                    user='root',
-                                    password='',
-                                    database='bancoalimentos',
+        self.conn = pymysql.connect(host='x8autxobia7sgh74.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+                                    user='uno1istjd900u7yk',
+                                    password='igwvpvp6i7xfmrsk',
+                                    database='fvr0dnbv5n7s7oip',
                                     charset='utf8mb4',
                                     cursorclass=pymysql.cursors.DictCursor)
 
