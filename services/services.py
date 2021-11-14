@@ -9,7 +9,7 @@ from domain.doador import Doador
 from domain.doacao import Doacao
 
 
-def runApplication():
+def main():
     app = Flask(__name__)
     CORS(app)
     cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
