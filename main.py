@@ -74,6 +74,7 @@ def cadastroDoacao():
     quantidade = dados['quantidade']
     cad = Doacao(idproduto, iddoador, quantidade)
     cad.cadastroDoacao()
+    cadastroEntrada()
     return jsonify(rs={"resultado": "Cadastro realizados com sucesso"})
 
 
