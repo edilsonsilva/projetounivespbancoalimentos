@@ -10,10 +10,10 @@ class Produto:
         self.idproduto = idproduto
         self.nomeproduto = nomeproduto
 
-        self.conn = pymysql.connect(host='l0ebsc9jituxzmts.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-                                    user='f1hj0m4lk3usnzbf',
-                                    password='anp7wc704kr6matp',
-                                    database='bj8deucknvntf5mk',
+        self.conn = pymysql.connect(host='x8autxobia7sgh74.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+                                    user='uno1istjd900u7yk',
+                                    password='igwvpvp6i7xfmrsk',
+                                    database='fvr0dnbv5n7s7oip',
                                     charset='utf8mb4',
                                     cursorclass=pymysql.cursors.DictCursor)
 
