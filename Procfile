@@ -1,2 +1,2 @@
-web:gunicorn wsgi:app
-heroku ps:scale web=1
+FLASK_APP=main.py flask run
+web: python main.py
