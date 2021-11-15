@@ -24,7 +24,6 @@ class Entrada:
                 self.conn.commit()
                 entrada_id = cur.lastrowid
                 return entrada_id
-
         except:
             print("Erro ao tentar cadastrar os dados")
             traceback.print_exc()
