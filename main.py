@@ -46,17 +46,6 @@ def listarDoador():
     return result.listarDoador()
 
 
-@app.route('/api/v1/doador/cadastro', methods=['POST'])
-def cadastroDoador():
-    dados = request.get_json()
-    produto = dados['idproduto']
-    doador = dados['iddoador']
-    qtde = dados['quantidade']
-    datadoacao = dados['datadoacao']
-    cad = Doacao(produto, doador, qtde, datadoacao)
-    cad.cadastroDoacao()
-    return "teste"
-
 # Rotas para doacao ------------------------------------------
 
 
