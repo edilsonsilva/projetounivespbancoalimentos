@@ -44,10 +44,8 @@ class Doacao:
                 cur.execute(
                     sql, (self.idproduto, self.iddoador, self.quantidade))
                 self.conn.commit()
-                nome = cur.execute(
-                    "select nomeproduto from produto where idproduto=%s", self.idproduto)
                 cur.execute("call atualizar_estoque(?,?,?)",
-                            self.idproduto, nome, self.quantidade)
+                            self.idproduto, pymysql.NULL, self.quantidade)
                 self.conn.commit()
         except:
             print("Erro ao tentar cadastrar os dados")
