@@ -80,7 +80,7 @@ class Doacao:
         try:
             with self.conn.cursor() as cur:
                 cur.execute(
-                    "select sum(quantidade) as total from doacao where date(datadoacao) = curdate()-1")
+                    "select sum(quantidade) as total from doacao where date(datadoacao) = curdate()")
                 result = cur.fetchall()
                 return jsonify(result)
         except:

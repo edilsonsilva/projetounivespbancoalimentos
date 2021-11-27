@@ -57,7 +57,7 @@ class Retirada:
         try:
             with self.conn.cursor() as cur:
                 cur.execute(
-                    "select sum(quantidade) as total from retirada where date(dataretirada) = curdate() - 1")
+                    "select sum(quantidade) as total from retirada where date(dataretirada) = curdate()")
                 result = cur.fetchall()
                 return jsonify(result)
         except:
